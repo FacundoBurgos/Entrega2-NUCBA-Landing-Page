@@ -16,6 +16,7 @@
     --background: #02050e;
     --primary: ;
     --secondary: #135788;
+    --fotoportada: #272d37;
 
     /*TEXT COLORS*/
     --text-white: #f3f4f6;
@@ -24,9 +25,9 @@
     /*DECORATION*/
 }
 
-body{
+/*body{
     background-color: var(--background);
-}
+}*/
 
 /*HEADER*/
 header{
@@ -73,4 +74,102 @@ header{
     padding: 5px 10px;
     height: 30px;
     cursor: pointer;
+}
+
+/*MAIN*/
+main{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--text-white);
+}
+
+/*PORTADA*/
+#portada{
+    max-width: 1200px;
+    margin-top: 65px;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 20px;
+}
+
+.portada-info h1{
+    font-size: 48px;
+    font-weight: 800;
+    width: 80%;
+    min-width: 500px;
+}
+
+.portada-info p{
+    font-size: 14px;
+    width: 70%;
+    color: var(--text-gray);
+    min-width: 450px;
+}
+
+.portada-info span{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.portada-info a{
+    background-color: var(--secondary);
+    color: var(--text-white);
+    width: 130px;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 1rem;
+}
+
+.foto-portada{
+    background: var(--fotoportada);
+    width: 340px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-portada img{
+    width: 300px;
+}
+
+footer{
+    background: var(--background);
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.pie-pagina{
+    background-color: green;
+    font-weight: 300;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.pie-pagina span{
+    font-weight: 700;
+    text-transform: uppercase;
 }
