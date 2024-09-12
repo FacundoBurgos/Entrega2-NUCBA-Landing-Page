@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrega 2 NUCBA Landing Page</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
 </head>
 <body>
         <!-- Rama navbar -->
@@ -14,13 +15,21 @@
         
         <!-- NAVBAR -->
          <nav class="navbar">
+            <label for="menu-toggle" class="menu-label"><img src="./assets/img/menu-hamburguesa.png" alt="menú hamburguesa"></label>
+            <input type="checkbox" id="menu-toggle">
             <ul class="navbar-list">
                 <li><a href="#" class="active">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
+                <li><a href="#">Arma tu PC</a></li>
                 <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Contáctanos</a></li>
             </ul>
-            <img src="./assets/img/cart-icon.svg" alt="carrito" class="cart-icon">
+            <label for="cart-toggle">
+                <img src="./assets/img/cart-icon.svg" alt="carrito" class="cart-icon">
+            </label>
+            <input type="checkbox" id="cart-toggle">
+            <div class="cart">
+                <h2>Tus compras</h2>
+            </div>
         </nav>
     
     </header>
@@ -30,11 +39,10 @@
         <section id="portada">
             <div class="portada-info">
                 <h1>Descubre el nuevo procesador de Intel</h1>
-                <p>El procesador <span>Intel Core I9 14901TE</span> utiliza la tecnología de fabricación Intel de 10nm, es para plataforma de escritorio, y se lanzó al mercado en julio de 2024. Presenta un diseño de 8 núcleos, lo que proporciona un total de 8 núcleos y 16 hilos de rendimiento. La frecuencia base es de 2.3GHz, y puede alcanzar una velocidad de reloj turbo máxima de 5.5GHz con un TDP de 45 W. El procesador cuenta con una caché L3 de gran tamaño de 36 MB. Además, <span>cuenta con gráficos integrados</span>. Utiliza el zócalo Intel Socket 1700
-                </p>
+                <p>El procesador <span>Intel Core I9 14901TE</span> utiliza la tecnología de fabricación Intel de 10nm, es para plataforma de escritorio, y se lanzó al mercado en julio de 2024. Presenta un diseño de 8 núcleos, lo que proporciona un total de 8 núcleos y 16 hilos de rendimiento. La frecuencia base es de 2.3GHz, y puede alcanzar una velocidad de reloj turbo máxima de 5.5GHz con un TDP de 45 W. El procesador cuenta con una caché L3 de gran tamaño de 36 MB. Además, <span>cuenta con gráficos integrados</span>. Utiliza el zócalo Intel Socket 1700</p>
                 <a href="#">Compra Ahora</a>
             </div>
-
+        
             <div class="foto-portada">
                 <img src="./assets/img/Intel-Core-i9-14901KE-anunciado-con-nucleos-P-Core-junto-a-otros-modelos-E_2.jpg" alt="Intel Core I9">
             </div>
@@ -43,6 +51,7 @@
         <section id="info">
             <h2>Compra, Arma y Disfruta de tu nueva PC</h2>
             <div class="info-cards-container">
+
                 <!--Card 1-->
                 <div class="info-card">
                     <img src="./assets/img/bolsa-de-la-compra-blanca.png" alt="Bolsa de Compra">
@@ -66,13 +75,39 @@
             </div>
         </section>
 
-        <section id="hero">
-            <h2>Soy el Hero</h2>
+        <!--Contacto-->
+        <section id="contact-us">
+            <h2>Contáctanos</h2>
+            <div class="contact-container">
+
+                <!--Contacto 1-->
+                <div class="contact">
+                <img src="./assets/img/ubicacion.png" alt="Ubicación">
+                <p>Encontranos en Calle San Martín 1234, Buenos Aires, Argentina</p>
+                </div>
+
+                <!--Contacto 2-->
+                <div class="contact">
+                <img src="./assets/img/email.png" alt="Ubicación">
+                <p>Puedes enviarnos un mail a contacto@hardpro.com</p>
+                </div>
+
+                <!--Contacto 3-->
+                <div class="contact">
+                <img src="./assets/img/telefono.png" alt="Ubicación">
+                <p>Puedes llamarnos o enviarnos un WhatsApp al número +54911555666</p>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="./assets/img/Facebook.png" alt="facebook"></a>
+            <a href="#"><img src="./assets/img/Instagram.png" alt="instagram"></a>
+        </div>
+
         <div class="pie-pagina">
             <p><span>Bienvenidos a Hardpro.</span>
                 Una página en la que encontrarás los componentes necesarios al mejor precio para armar la PC de tus sueños.
@@ -80,6 +115,10 @@
                 Puedes contactarnos en el horario de comercio y nosotros te asesoraremos sobre lo que necesites saber.
                 Esperamos que puedas encontrar los componentes que deseas y disfrutar de tu nueva PC con Hardpro.com
             </p>
+        </div>
+
+        <div class="logo">
+            <img src="./assets/img/Logo2chico.png" alt="logo">
         </div>
     </footer>
 
